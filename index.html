@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobito - Tu diario de hobbies, rachas y logros</title>
+  <meta name="description" content="Hobito es la aplicación móvil para el registro y seguimiento de tus hobbies y aficiones. Controla tus rachas, desbloquea logros y comparte tu inspiración.">
+  <meta name="keywords" content="Hobito, hobbies, seguimiento de hobbies, app de hábitos, rachas, logros, actividades personales">
+  <meta name="author" content="Hobito">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hobito.app/">
+  <meta property="og:title" content="Hobito - Tu diario de hobbies, rachas y logros">
+  <meta property="og:description" content="Descubre Hobito, la app móvil para registrar aficiones, medir rachas, desbloquear logros y conectar con entusiastas.">
+  <meta property="og:image" content="assets/images/og-image.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hobito - App de seguimiento de hobbies">
+  <meta name="twitter:description" content="Registra tus aficiones, desbloquea logros y cuida tu tiempo personal con Hobito.">
+  <meta name="twitter:image" content="assets/images/og-image.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Estilos compartidos -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Destellos ambientales inspirados en el diseño de la app -->
+  <div class="ambient-glow ambient-glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-bottom-right" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-center" aria-hidden="true"></div>
+
+  <!-- Banner informativo sobre naturaleza legal y estática -->
+  <aside class="legal-disclaimer-banner" role="note">
+    <div class="container">
+      🌱 <strong>Web informativa y legal de Hobito:</strong> Esta web no recopila datos personales, no utiliza cookies de seguimiento ni gestiona cuentas. Todas las funciones de datos corresponden exclusivamente a la app móvil.
+    </div>
+  </aside>
+
+  <!-- Barra de navegación principal -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="Hobito - Inicio">
+        <div class="brand-bubbles" aria-hidden="true">
+          <span class="bubble-mini bubble-mint"></span>
+          <span class="bubble-mini bubble-orange"></span>
+          <span class="bubble-mini bubble-blue"></span>
+        </div>
+        <div class="brand-text">
+          <span class="c-h">H</span><span class="c-o1">o</span><span class="c-b">b</span><span class="c-i">i</span><span class="c-t">t</span><span class="c-o2">o</span>
+        </div>
+      </a>
+
+      <!-- Botón hamburguesa móvil -->
+      <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menú de enlaces -->
+      <nav id="primary-nav" class="nav-menu" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link active" aria-current="page">Inicio</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="privacy-policy.html" class="nav-link">Política de Privacidad</a>
+        <a href="terms-and-conditions.html" class="nav-link">Términos y Condiciones</a>
+        <div class="nav-cta-mobile">
+          <a href="#descargar" class="btn btn-primary" style="width: 100%;">Descargar App</a>
+        </div>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#descargar" class="btn btn-primary">Descargar App</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="pill-tag">
+            <span class="icon-dot"></span>
+            <span>Tu espacio para registrar lo que amas</span>
+          </div>
+
+          <h1 class="hero-title">
+            Celebra tus aficiones, cultiva tus <span class="highlight-gradient">mejores momentos</span>
+          </h1>
+
+          <p class="hero-description">
+            <strong>Hobito</strong> es una aplicación móvil acogedora e intuitiva diseñada para acompañarte en tu tiempo libre: guarda tus actividades, construye rachas constantes, desbloquea logros y comparte tu progreso con una comunidad afín.
+          </p>
+
+          <div class="hero-actions">
+            <!-- Enlace a Google Play Store configurable -->
+            <a href="https://play.google.com/store/apps/details?id=com.hobito.app" class="btn btn-play-store" data-play-store-link target="_blank" rel="noopener noreferrer" aria-label="Descargar Hobito en Google Play Store">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M3.6 1.8L15.3 12L3.6 22.2C3.2 21.8 3 21.1 3 20.3V3.7C3 2.9 3.2 2.2 3.6 1.8Z" fill="#20C997"/>
+                <path d="M15.3 12L19 15.2L23 12.9C24.4 12.1 24.4 10.8 23 10L19 7.7L15.3 12Z" fill="#FFC038"/>
+                <path d="M3.6 1.8L15.3 12L19 7.7L4.6 0.6C4.2 0.3 3.9 0.3 3.6 0.5C3.3 0.7 3.6 1.8 3.6 1.8Z" fill="#38B6FF"/>
+                <path d="M3.6 22.2L15.3 12L19 15.2L4.6 23.4C3.8 23.8 3.2 23.3 3.6 22.2Z" fill="#FF6B6B"/>
+              </svg>
+              <span>Disponible en Google Play</span>
+            </a>
+
+            <a href="#caracteristicas" class="btn btn-secondary">
+              Explorar funciones
+            </a>
+          </div>
+
+          <div class="hero-notes">
+            <span class="hero-note-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#20C997" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              100% libre de anuncios invasivos
+            </span>
+            <span class="hero-note-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#20C997" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Control total de privacidad
+            </span>
+          </div>
+        </div>
+
+        <!-- Visual Mockup con capturas reales -->
+        <div class="hero-mockup-wrapper">
+          <div class="screens-duo">
+            <!-- Captura de Perfil y Niveles -->
+            <div class="phone-card phone-card-front">
+              <img src="assets/images/app-profile.jpg" alt="Pantalla de perfil, estadísticas y niveles en Hobito" width="250" height="540" loading="eager">
+            </div>
+
+            <!-- Captura de Bienvenida y Login -->
+            <div class="phone-card phone-card-back">
+              <img src="assets/images/app-login.jpg" alt="Pantalla de inicio de sesión de Hobito" width="250" height="540" loading="lazy">
+            </div>
+
+            <!-- Badges flotantes -->
+            <div class="floating-badge floating-badge-1">
+              <span>🔥</span>
+              <span>¡Racha activa esta semana!</span>
+            </div>
+
+            <div class="floating-badge floating-badge-2">
+              <span>⭐</span>
+              <span>Nivel 1: Curious (117 logros)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Funcionalidades Principales -->
+    <section id="caracteristicas" class="section section-muted">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Funcionalidades</span>
+          <h2 class="section-title">Diseñado con mimo para tus aficiones</h2>
+          <p class="section-subtitle">
+            Cada rincón de Hobito está pensado para que registrar tu tiempo libre sea un momento de desconexión gratificante y motivador.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-box-coral">
+              <span>📖</span>
+            </div>
+            <h3 class="feature-title">Registro de Hobbies</h3>
+            <p class="feature-text">
+              Lleva la cuenta de tus lecturas, sesiones de pintura, cocina, videojuegos, jardinería o deporte. Añade notas, fechas y conserva la memoria de lo que disfrutas hacer.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-box-peach">
+              <span>🔥</span>
+            </div>
+            <h3 class="feature-title">Rachas y Constancia</h3>
+            <p class="feature-text">
+              Mantén el ritmo viendo tus días activos en la semana. Hobito te ayuda a cuidar la constancia en tus aficiones sin presiones ni métricas estresantes.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-box-amber">
+              <span>🏆</span>
+            </div>
+            <h3 class="feature-title">Niveles y 117 Logros</h3>
+            <p class="feature-text">
+              Comienza en <em>Level 1: Curious</em> y acumula puntos de experiencia (XP). Desbloquea más de 117 logros secretos a medida que exploras nuevas pasiones.
+            </p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-box-sky">
+              <span>👥</span>
+            </div>
+            <h3 class="feature-title">Comunidad e Inspiración</h3>
+            <p class="feature-text">
+              Conecta con personas que comparten tus intereses. Sigue a amigos y creadores, encuentra nuevas ideas y celebra los logros alcanzados.
+            </p>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-box-mint">
+              <span>🔒</span>
+            </div>
+            <h3 class="feature-title">Privacidad a tu Medida</h3>
+            <p class="feature-text">
+              Tú tienes el control absoluto: elige si cada registro de actividad es público para inspirar a otros o permanece estrictamente en tu diario personal privado.
+            </p>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="feature-card">
+            <div class="feature-icon-box icon-box-royal">
+              <span>🌙</span>
+            </div>
+            <h3 class="feature-title">Preferencias y Modos</h3>
+            <p class="feature-text">
+              Adaptado a tu dispositivo con selector de idioma del sistema y soporte para temas claro y oscuro, para que disfrutes de una lectura descansada a cualquier hora.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Capturas de Pantalla -->
+    <section id="capturas" class="section screenshots-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Vistazo a la App</span>
+          <h2 class="section-title">Una interfaz limpia, cálida y acogedora</h2>
+          <p class="section-subtitle">
+            Descubre el aspecto real de la aplicación Hobito en tu smartphone.
+          </p>
+        </div>
+
+        <div class="screenshots-grid">
+          <!-- Captura 1 -->
+          <div class="screenshot-item">
+            <div class="screenshot-frame">
+              <img src="assets/images/app-login.jpg" alt="Captura de pantalla de bienvenida y login en Hobito" width="270" height="580" loading="lazy">
+            </div>
+            <div class="screenshot-caption">
+              <h4>Acceso sencillo y seguro</h4>
+              <p>Inicia sesión con tu correo electrónico o cuenta de Google de forma rápida y confiable.</p>
+            </div>
+          </div>
+
+          <!-- Captura 2 -->
+          <div class="screenshot-item">
+            <div class="screenshot-frame">
+              <img src="assets/images/app-profile.jpg" alt="Captura de pantalla del perfil y niveles de Hobito" width="270" height="580" loading="lazy">
+            </div>
+            <div class="screenshot-caption">
+              <h4>Tu progreso en un vistazo</h4>
+              <p>Monitorea hobbies totales, días de racha, comunidad, XP y logros desbloqueados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Llamada a la Acción (CTA Descarga) -->
+    <section id="descargar" class="section">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-inner">
+            <span class="section-badge">Empieza hoy</span>
+            <h2 class="cta-title">¿Listo para cuidar tu tiempo libre?</h2>
+            <p class="cta-text">
+              Descarga Hobito en tu móvil Android y comienza a recopilar los recuerdos de tus pasiones favoritas.
+            </p>
+
+            <a href="https://play.google.com/store/apps/details?id=com.hobito.app" class="btn btn-play-store" data-play-store-link target="_blank" rel="noopener noreferrer" style="font-size: 1.05rem; padding: 0.85rem 1.8rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M3.6 1.8L15.3 12L3.6 22.2C3.2 21.8 3 21.1 3 20.3V3.7C3 2.9 3.2 2.2 3.6 1.8Z" fill="#20C997"/>
+                <path d="M15.3 12L19 15.2L23 12.9C24.4 12.1 24.4 10.8 23 10L19 7.7L15.3 12Z" fill="#FFC038"/>
+                <path d="M3.6 1.8L15.3 12L19 7.7L4.6 0.6C4.2 0.3 3.9 0.3 3.6 0.5C3.3 0.7 3.6 1.8 3.6 1.8Z" fill="#38B6FF"/>
+                <path d="M3.6 22.2L15.3 12L19 15.2L4.6 23.4C3.8 23.8 3.2 23.3 3.6 22.2Z" fill="#FF6B6B"/>
+              </svg>
+              <span>Descargar en Google Play</span>
+            </a>
+
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; margin-top: 1rem; font-size: 0.9rem;">
+              <a href="faq.html" style="color: var(--text-secondary); text-decoration: underline;">Preguntas Frecuentes</a>
+              <span style="color: var(--text-light);">•</span>
+              <a href="privacy-policy.html" style="color: var(--text-secondary); text-decoration: underline;">Política de Privacidad</a>
+              <span style="color: var(--text-light);">•</span>
+              <a href="terms-and-conditions.html" style="color: var(--text-secondary); text-decoration: underline;">Términos y Condiciones</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página común -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Columna 1: Marca -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Hobito - Inicio">
+            <div class="brand-bubbles" aria-hidden="true">
+              <span class="bubble-mini bubble-mint"></span>
+              <span class="bubble-mini bubble-orange"></span>
+              <span class="bubble-mini bubble-blue"></span>
+            </div>
+            <div class="brand-text">
+              <span class="c-h">H</span><span class="c-o1">o</span><span class="c-b">b</span><span class="c-i">i</span><span class="c-t">t</span><span class="c-o2">o</span>
+            </div>
+          </a>
+          <p class="footer-description">
+            Tu diario visual de aficiones, rachas y logros. Un lugar acogedor donde valorar tu tiempo libre y celebrar cada pequeño avance.
+          </p>
+          <span class="footer-legal-tag">Web Informativa y Legal Estática</span>
+        </div>
+
+        <!-- Columna 2: Navegación -->
+        <div>
+          <h4 class="footer-col-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="#caracteristicas" class="footer-link">Funcionalidades</a></li>
+            <li><a href="#capturas" class="footer-link">Capturas</a></li>
+            <li><a href="faq.html" class="footer-link">Preguntas Frecuentes (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Información Legal -->
+        <div>
+          <h4 class="footer-col-title">Legalidad y Datos</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html" class="footer-link">Política de Privacidad</a></li>
+            <li><a href="terms-and-conditions.html" class="footer-link">Términos y Condiciones</a></li>
+            <li><a href="privacy-policy.html#eliminacion-cuenta" class="footer-link">Eliminación de Cuenta</a></li>
+            <li><a href="privacy-policy.html#derechos-rgpd" class="footer-link">Tus Derechos RGPD</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Contacto y Soporte -->
+        <div>
+          <h4 class="footer-col-title">Contacto</h4>
+          <p class="footer-description" style="margin-bottom: 0.8rem;">
+            ¿Tienes dudas, sugerencias o necesitas asistencia sobre la app?
+          </p>
+          <!-- Correo configurable -->
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:soporte@hobito.app" class="footer-link">soporte@hobito.app</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span style="color: var(--text-muted); font-size: 0.88rem;">Soporte oficial Hobito</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="current-year">2026</span> Hobito. Todos los derechos reservados.
+        </div>
+        <div>
+          Esta web es independiente y no almacena información de usuario ni credenciales.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

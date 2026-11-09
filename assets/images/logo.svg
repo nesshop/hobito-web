@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" fill="none">
+  <!-- Hobito colorful typography inspired by mobile app -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&amp;display=swap');
+    .hobito-text {
+      font-family: 'Baloo 2', cursive, sans-serif;
+      font-size: 52px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+  </style>
+  <g id="hobito-logo">
+    <!-- Top decorative 3 bubbles preview in small or inline -->
+    <text x="10" y="52" class="hobito-text">
+      <tspan fill="#FF6B6B">H</tspan>
+      <tspan fill="#FFA94D">o</tspan>
+      <tspan fill="#20C997">b</tspan>
+      <tspan fill="#38B6FF">i</tspan>
+      <tspan fill="#FFC038">t</tspan>
+      <tspan fill="#5C7CFA">o</tspan>
+    </text>
+  </g>
+</svg>
+

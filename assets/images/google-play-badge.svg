@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" fill="none">
+  <rect width="240" height="70" rx="20" fill="#1E293B"/>
+  <!-- Google play triangle logo -->
+  <g transform="translate(22, 17)">
+    <path d="M5.2 2.8 L23.5 19 L5.2 35.2 C4.5 34.6 4 33.6 4 32.4 V5.6 C4 4.4 4.5 3.4 5.2 2.8 Z" fill="#20C997"/>
+    <path d="M23.5 19 L29.2 24 L29.3 24.1 L35.6 20.4 C37.8 19.1 37.8 17.1 35.6 15.8 L29.3 12.1 L23.5 17.2 V19 Z" fill="#FFC107"/>
+    <path d="M5.2 2.8 L23.5 19 L29.3 13.9 L6.8 0.9 C6.2 0.5 5.7 0.4 5.2 0.7 C4.8 1.1 5.2 2.8 5.2 2.8 Z" fill="#38B6FF"/>
+    <path d="M5.2 35.2 L23.5 19 L29.3 24.1 L6.8 37.1 C5.7 37.7 4.8 36.9 5.2 35.2 Z" fill="#FF6B6B"/>
+  </g>
+  <!-- Text -->
+  <text x="76" y="29" font-family="'Poppins', sans-serif" font-size="11" font-weight="500" fill="#94A3B8" letter-spacing="0.5">DISPONIBLE EN</text>
+  <text x="76" y="49" font-family="'Poppins', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" letter-spacing="0.2">Google Play</text>
+</svg>
+
