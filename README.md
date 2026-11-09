@@ -37,7 +37,7 @@ El proyecto contiene 4 páginas principales optimizadas para SEO, accesibilidad 
    - Condiciones de uso de la aplicación móvil Hobito.
    - Normas de uso adecuado, propiedad intelectual, contenido de usuarios, valor lúdico no comercial de logros/XP, responsabilidades y legislación aplicable (España / UE).
 
-4. **Preguntas Frecuentes - FAQ (`faq.html` y `/faq/`index.html)**:
+4. **Preguntas Frecuentes - FAQ (`faq.html` y `/faq/index.html`)**:
    - Componentes interactivos tipo acordeón (*accordion*) accesibles.
    - Respuestas a dudas habituales sobre hobbies, privacidad, rachas, niveles, logros, eliminación de cuenta y soporte.
 
@@ -71,6 +71,8 @@ hobito-web/
 │   ├── css/
 │   │   └── styles.css          # Estilos globales y compartidos
 │   ├── js/
+│   │   ├── translations.js     # Diccionario de traducciones (Español / Inglés)
+│   │   ├── i18n.js             # Motor dinámico de cambio de idioma
 │   │   └── main.js             # Scripts: menú móvil, acordeón y configuración
 │   └── images/
 │       ├── logo.svg            # Logotipo vectorial de Hobito
@@ -112,6 +114,14 @@ En `privacy-policy.html` y `terms-and-conditions.html`, busca las etiquetas con 
 - `[Dirección postal completa o Ciudad/País]`
 - `[Proveedor de nube de la app móvil — Ej.: Google Cloud / Firebase / Supabase / AWS / Servidor propio UE]`
 
+### D. Internacionalización y Selector de Idioma (ES / EN)
+La web incluye un sistema dinámico y ligero de cambio de idioma entre Español e Inglés sin recargar la página:
+- **Detección automática:** Si el usuario no ha seleccionado un idioma, detecta el idioma del navegador (`navigator.language`).
+- **Persistencia:** Almacena la preferencia en `localStorage ('hobito_lang')` para mantenerla entre páginas y visitas.
+- **Selector accesible:** Botones `ES` / `EN` integrados en la barra de navegación (desktop y móvil) con atributos `aria-pressed`.
+- **Textos y metadatos:** Actualiza automáticamente el `title`, la `meta description`, el atributo `<html lang="...">`, los textos y recalcula los acordeones abiertos.
+- Para ampliar o editar traducciones, modifica el archivo `assets/js/translations.js`.
+
 ---
 
 ## 6. Despliegue en GitHub Pages
@@ -121,7 +131,7 @@ Al tratarse de una web 100% estática sin compiladores ni dependencias de servid
 ### Paso 1: Subir los cambios a tu repositorio en GitHub
 ```bash
 git add .
-git commit -m "feat: web informativa y legal de Hobito"
+git commit -m "feat: soporte multilenguaje espanol e ingles"
 git push origin main
 ```
 
@@ -155,5 +165,4 @@ python3 -m http.server 8000
 # O abriendo index.html directamente en el navegador
 open index.html
 ```
-Abre en tu navegador `http://localhost:8000/` para comprobar la navegación, el acordeón y la responsividad.
-
+Abre en tu navegador `http://localhost:8000/` para comprobar la navegación, el acordeón, el selector de idioma y la responsividad.

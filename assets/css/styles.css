@@ -229,6 +229,58 @@ img {
 .brand-text .c-t { color: var(--color-amber); }
 .brand-text .c-o2 { color: var(--color-royal); }
 
+/* Acciones y Selector de Idioma (i18n) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1.5px solid var(--border-card);
+  border-radius: var(--radius-pill);
+  padding: 3px 4px;
+  box-shadow: var(--shadow-sm);
+  gap: 2px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: var(--transition);
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  color: var(--color-coral);
+}
+
+.lang-btn.active {
+  background: linear-gradient(135deg, var(--color-coral) 0%, #FF8E53 100%);
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(255, 107, 107, 0.25);
+}
+
+.lang-divider {
+  color: #CBD5E1;
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+.nav-lang-mobile {
+  display: none;
+}
+
 /* Enlaces del Navbar */
 .nav-menu {
   display: flex;
@@ -1134,6 +1186,10 @@ img {
 
   .nav-cta {
     display: none;
+  }
+
+  .nav-actions {
+    gap: 0.6rem;
   }
 
   .nav-menu .nav-cta-mobile {
